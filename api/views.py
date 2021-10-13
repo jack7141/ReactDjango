@@ -1,3 +1,9 @@
 from django.shortcuts import render
+from django.views.generic import ListView
+from django.http import HttpResponse
+# class HomeView(ListView):
+#     pass
 
-# Create your views here.
+
+def HomeView(request):
+    return HttpResponse('Test')
