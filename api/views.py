@@ -1,9 +1,9 @@
-from django.shortcuts import render
-from django.views.generic import ListView
-from django.http import HttpResponse
-# class HomeView(ListView):
-#     pass
+from rest_framework.generics import ListAPIView, CreateAPIView, DestroyAPIView, UpdateAPIView
+from .models import Room
+from .serializers import RoomSerializer
 
 
-def HomeView(request):
-    return HttpResponse('Test')
+class ListRoomAPIView(ListAPIView):
+    queryset = Room.objects.all()
+    serializer_class = RoomSerializer
+
