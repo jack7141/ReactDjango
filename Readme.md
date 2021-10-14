@@ -27,3 +27,8 @@
 
 
 
+### VSCode에서 Anacoda 설정 잡는법
+1. Python Interperter 설정하기 ==> Ctrl + shift + P 를 눌러서 나오는 python:Select Interperter에서 내가 사용하고자 하는 가상환경을 선택
+
+2. File - Preference - Setting [단축키 Ctrl + , ]에 들아가서 Workspace 선택 후 python: python path를
+내가 사용하고자 하는 경로를 입력해준다.[서칭 결과 자동으로 되는 경우도 있는거 같은데 난 아니였음]
