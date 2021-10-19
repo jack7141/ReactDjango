@@ -25,6 +25,10 @@
 8. npm install @material-ui/icons
 9. 설치 후 babel.config.json파일 생성[fontend폴더]
 
+### Npx로 설치
+* frontend라는 폴더로 생성
+1. npx create-react-app [appName]
+2. 생성된 appName폴더 들어가서 npm start로 셋팅완료!!
 
 
 ### VSCode에서 Anacoda 설정 잡는법

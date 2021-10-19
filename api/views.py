@@ -4,7 +4,7 @@ from rest_framework.generics import ListAPIView
 from rest_framework import viewsets
 from .models import ToDo
 from .serializers import ToDoSerializer
-
+ 
 class ToDoAPIViewset(viewsets.ModelViewSet):
     queryset = ToDo.objects.all()
     serializer_class = ToDoSerializer
