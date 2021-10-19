@@ -1,9 +1,11 @@
-from django.contrib import admin
-from django.urls import path
-from .views import ListRoomAPIView
+from .views import  ToDoAPIViewset
+from rest_framework import routers
 
-app_name = "api"
+# app_name = "api"
 
-urlpatterns = [
-    path('', ListRoomAPIView.as_view(), name='ApiListView'),
-]
+# urlpatterns = [
+#     path('', ToDoAPIViewset.as_view(), name='ApiListView'),
+# ]
+
+router = routers.DefaultRouter()
+router.register('todo', ToDoAPIViewset)
