@@ -29,7 +29,12 @@
 * frontend라는 폴더로 생성
 1. npx create-react-app [appName]
 2. 생성된 appName폴더 들어가서 npm start로 셋팅완료!!
+3. https://react-bootstrap.github.io/getting-started/introduction ==> React-Bootstarp사용
+4. index.js에 부트스트랩 경로 추가
+5. React에서는 API와 통신할 때 Axios를 사용
 
+### 고민사항
+* axios를 사용하여 API와 통신, Django를 통한 통신??
 
 ### VSCode에서 Anacoda 설정 잡는법
 1. Python Interperter 설정하기 ==> Ctrl + shift + P 를 눌러서 나오는 python:Select Interperter에서 내가 사용하고자 하는 가상환경을 선택
