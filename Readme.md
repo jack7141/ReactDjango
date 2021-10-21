@@ -31,7 +31,7 @@
 2. 생성된 appName폴더 들어가서 npm start로 셋팅완료!!
 3. https://react-bootstrap.github.io/getting-started/introduction ==> React-Bootstarp사용
 4. index.js에 부트스트랩 경로 추가
-5. React에서는 API와 통신할 때 Axios를 사용
+5. React에서는 API와 통신할 때 Axios를 사용 ==> npm install axios
 
 ### 고민사항
 * axios를 사용하여 API와 통신, Django를 통한 통신??
