@@ -35,6 +35,7 @@
 
 ### 고민사항
 * axios를 사용하여 API와 통신, Django를 통한 통신??
+* Django내부에서만 API로 주고 받을 시 API 호출 방법 ==> https://whatisthenext.tistory.com/137
 
 ### VSCode에서 Anacoda 설정 잡는법
 1. Python Interperter 설정하기 ==> Ctrl + shift + P 를 눌러서 나오는 python:Select Interperter에서 내가 사용하고자 하는 가상환경을 선택

@@ -20,5 +20,6 @@ from api.urls import router
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('', include('frontend.urls', namespace='frontend')),
+    path('', include('core.urls', namespace='core')),
+    path("todos/", include("todos.urls", namespace="todos")),
 ]

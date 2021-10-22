@@ -1,0 +1,21 @@
+<h1>Todo List!!</h1>
+
+
+<h5>타이틀 리스트</h5>
+{% for a in result %}
+{{a.id}} - {{a.title}} |
+{% endfor %}
+
+
+<script>
+    function send(){
+        document.getElementById('content').submit();
+    }
+</script>
+
+<p></p>
+<form id="content" name="content" method="get" action="{% url 'todos:TodoSearch' %}">
+    {% csrf_token %}
+    타이틀:<input name="Titleid" type="text">
+    <button type="button" onclick="send()">검색</button>
+</form>
