@@ -21,10 +21,15 @@ def Home(request):
 
 
 def Search(request):
+    # 없을시 예외처리 HTML부분 안되있음
+    url = 'http://127.0.0.1:8000/api/todo/'
+    responseBody = urllib.request.urlopen(url).read().decode('utf-8')
+    jsonlist = json.loads(responseBody)
+
     SearchBar = int(request.GET.get('Titleid', 0))
-    print(SearchBar)
-    pass
-    # return render(request, "todos/todo_list.html", {'result': result})
+    data = next((item for item in jsonlist if item["id"] == SearchBar))
+
+    return render(request, 'todos/todo_list.html', {'context' : data})
 
 
 '''
